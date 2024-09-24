@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  :root {
+    --column-bg: #f4f5f7;
+    --task-bg: #ffffff;
+    --text-primary: #172b4d;
+    --text-secondary: #6b778c;
+    --hover-bg: rgba(0,0,0,0.05);
+    --control-panel-bg: #2c2c2c;
+  --button-bg: #3a3a3a;
+  --button-hover-bg: #4a4a4a;
+  --border-color: #4a4a4a;
+  --dropdown-bg: #3a3a3a;
+  --text-primary: #ffffff;
+  --text-secondary: #a8a8a8;
+}
+  
+  body.dark {
+    --column-bg: #2f3136;
+    --task-bg: #40444b;
+    --text-primary: #ffffff;
+    --text-secondary: #b9bbbe;
+    --hover-bg: rgba(255,255,255,0.05);
+    --control-panel-bg: #2c2c2c;
+    --button-bg: #3a3a3a;
+    --button-hover-bg: #4a4a4a;
+    --border-color: #4a4a4a;
+    --dropdown-bg: #3a3a3a;
+    --select-bg: #2c2c2c;
+
+  }
+
+  body.light {
+    --control-panel-bg: #ffffff;
+    --button-bg: #f4f5f7;
+    --button-hover-bg: #e4e6e9;
+    --border-color: #e0e0e0;
+    --dropdown-bg: #ffffff;
+    --text-primary: #000000;
+    --text-secondary: #6b6b6b;
+  }
+  
+  .app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .light {
+    background-color: #f4f5f7;
+    color: #172b4d;
+  }
+  
+  .dark {
+    background-color: #2f3136;
+    color: #ffffff;
+  }
+  
+  .error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Add smooth transitions for all elements */
+  * {
+    transition: all 0.3s ease;
+  }
+  
+  /* Improve scrollbar appearance */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--column-bg);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--text-secondary);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-primary);
+  }
+
+
+  /* Add these styles for better responsiveness */
+@media (max-width: 768px) {
+    .app {
+      padding: 10px;
+    }
+  }
